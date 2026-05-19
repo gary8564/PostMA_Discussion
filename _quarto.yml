@@ -20,7 +20,7 @@ format:
     toc-depth: 5
     toc-location: left
     toc-float: true
-    number-sections: true
+    number-sections: false
     code-copy: true
     from: markdown+emoji
     link-external-icon: true
