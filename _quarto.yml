@@ -1,12 +1,17 @@
 project:
   type: website
   output-dir: _html
+  render: 
+    - "*.qmd"
+    - "notes/**/*.qmd"
+    - "presentations/**/*.qmd"
+
 
 execute:
   freeze: auto
 
 # Brand configuration — shared across all profiles
-brand: brand/brand.yml
+brand: assets/brand.yml
 
 # Shared HTML format settings
 format:
@@ -23,8 +28,7 @@ website:
     type: overlay
   navbar:
     title: false
-    logo: "assets/TruhnLab.png"
-    logo-href: /index.qmd
+    logo: small
     left:
       - text: "Overview"
         href: index.qmd
@@ -32,18 +36,9 @@ website:
         href: notes/meetings.qmd
       - text: "Presentation"
         href: presentations/index.qmd
-    sidebar:
-      - id: presentation
-        title: "Presentation"
-        style: "docked"
-        search: true
-        contents:
-          - presentations/index.qmd
     right:
       - icon: github
         href: https://github.com/gary8564/MedSliM
 
   repo-url: https://github.com/gary8564/PostMA_Discussion
-  repo-actions: none
-  repo-branch: main
-  repo-link-target: "_blank"
+  repo-actions: [edit, issue]
