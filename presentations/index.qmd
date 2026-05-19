@@ -4,7 +4,6 @@ sidebar: presentation
 toc: true
 listing:
   - id: slides
-    template: slides-listing.ejs
     contents: "listing.yaml"
     sort-ui: true
     filter-ui: true
