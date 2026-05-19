@@ -10,16 +10,34 @@ project:
 execute:
   freeze: auto
 
-# Brand configuration — shared across all profiles
-brand: assets/brand.yml
-
-# Shared HTML format settings
 format:
   html:
     title-block-style: none
     theme:
-      light: [flatly, brand, "style/defaults.scss"]
-      dark: [darkly, brand, "style/defaults.scss", "style/dark-theme.scss"]
+      light: [flatly, "style/light-theme.scss", "style/shared.scss"]
+      dark: [darkly, "style/dark-theme.scss", "style/shared.scss"]
+    toc: true
+    toc-depth: 5
+    toc-location: left
+    toc-float: true
+    number-sections: true
+    code-copy: true
+    from: markdown+emoji
+    link-external-icon: true
+    link-external-newwindow: true
+    code-block-bg: true
+    code-block-border-left: "#00549F"
+    highlight-style: github
+    html-math-method: mathjax
+    include-in-header:
+      - text: |
+          <script>
+          MathJax = {
+            tex: {
+              tags: 'ams'
+            }
+          };
+          </script>
 
 website:
   favicon: "assets/TruhnLab.png"
@@ -28,7 +46,7 @@ website:
     type: overlay
   navbar:
     title: false
-    logo: small
+    logo: assets/TruhnLab.png
     left:
       - text: "Overview"
         href: index.qmd

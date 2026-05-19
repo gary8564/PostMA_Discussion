@@ -7,12 +7,12 @@ from: markdown+emoji
 sidebar: false
 format: 
   html:
-    page-layout: full
+    toc-location: right
     link-external-icon: true
     link-external-newwindow: true
 ---
 
-![](/assets/rad_img.png){fig-align="center" width="4in"}
+![](/assets/rad_img.png){.rad-image fig-align="center" width="100%"}
 
 ## Abstract
 

@@ -1,0 +1,13 @@
+---
+title: "Meeting notes (20 May 2026)"
+from: markdown+emoji
+sidebar: false
+format:
+  html:
+    page-layout: full
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+## Notes
+

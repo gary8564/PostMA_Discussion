@@ -3,7 +3,7 @@ title: "Broad direction discussion"
 subtitle: "Master's thesis publication discussion"
 author:
   - name: "Gary Chang"
-date: 20.05.2026
+date: 2026-05-20
 format:
   revealjs:
     footer: "Broad direction discussion"

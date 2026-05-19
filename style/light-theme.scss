@@ -1,0 +1,33 @@
+/*-- scss:defaults --*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+$body-color: #000000;
+$body-bg: #ffffff;
+$primary: #00549f;
+$secondary: #006165;
+$success: #8dc060;
+$info: #0098a1;
+$warning: #f6a800;
+$danger: #cc071e;
+$light: #e8f1fa;
+$dark: #4a5568;
+
+$font-family-sans-serif: "Roboto", sans-serif;
+$font-family-monospace: "Fira Code", monospace;
+$headings-font-family: "Roboto", sans-serif;
+$headings-font-weight: 700;
+$link-color: #407fb7;
+$link-decoration: underline;
+
+$navbar-bg: #00549f;
+$navbar-light-color: #646567;
+$navbar-light-hover-color: #000000;
+$navbar-light-active-color: $link-color;
+$footer-bg: #00549f;
+$popover-bg: #ffffff;
+$input-bg: #ffffff;
+$dropdown-bg: #ffffff;
+$dropdown-color: #407fb7;
+$dropdown-link-color: #407fb7;
+$dropdown-link-hover-bg: #e8f1fa;
+$dropdown-link-hover-color: #000000;

@@ -12,8 +12,8 @@ from: markdown+emoji
 format:
   revealjs:
     theme:
-      - default # more theme options available at https://quarto.org/docs/presentations/revealjs/#themes
-      - brand # custom theme defined in brand/brand.yml
+      - default
+    logo: ../../assets/TruhnLab.png
     toc-title: "Today" # title of the table of contents
     toc: false # whether or not to automatically generate a a table of contents based on the headings in the slide
     toc-depth: 1

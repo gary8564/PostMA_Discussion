@@ -1,9 +1,10 @@
 - title: "Thesis Defense"
-  author: Gary Chang
-  date: 04.14.2026 # MM.DD.YYYY
-  path: "defense/defense.qmd"
+  author: "Gary Chang"
+  date: 04/14/2026
+  path: "defense/defense.html"
 
 - title: "Discussion of broad direction"
-  author: Gary Chang
-  date: 20.05.2026 # MM.DD.YYYY
-  path: "progress_updates/broad_discsuss.qmd"
+  subtitle: "Master's thesis publication discussion"
+  author: "Gary Chang"
+  date: 05/20/2026
+  path: "progress_updates/index.html"

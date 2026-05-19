@@ -4,7 +4,12 @@ sidebar: presentation
 toc: true
 listing:
   - id: slides
-    contents: "listing.yaml"
+    contents: listing.yaml
+    type: table
+    fields: [date, title, author]
+    field-links: [title]
+    table-hover: true
+    sort: "date desc"
     sort-ui: true
     filter-ui: true
     field-display-names:
@@ -15,3 +20,6 @@ listing:
       date: date
     date-format: "MMM D, YYYY"
 ---
+
+::: {#listing-slides}
+:::

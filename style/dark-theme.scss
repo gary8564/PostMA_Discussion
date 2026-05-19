@@ -1,21 +1,39 @@
 /*-- scss:defaults --*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+$body-color: #ffffff;
+$body-bg: #222222;
+$primary: #8ebae5;
+$secondary: #0098a1;
+$success: #57ab27;
+$info: #0098a1;
+$warning: #f6a800;
+$danger: #cc071e;
+$light: #2d3748;
+$dark: #1a202c;
+
+$font-family-sans-serif: "Roboto", sans-serif;
+$font-family-monospace: "Fira Code", monospace;
+$headings-font-family: "Roboto", sans-serif;
+$headings-font-weight: 700;
+$link-color: #407fb7;
+$link-decoration: underline;
+
 $navbar-bg: #3d3f40;
+$navbar-dark-color: rgba(255, 255, 255, 0.85);
+$navbar-dark-hover-color: #ffffff;
+$navbar-dark-active-color: $link-color;
 $footer-bg: #3d3f40;
-
-// Code blocks
 $code-block-bg-alpha: -0.8;
-
 $popover-bg: #242424;
 $input-bg: #242424;
-
 $dropdown-bg: #222222;
-$dropdown-color: #E2E8F0;
-$dropdown-link-color: #E2E8F0;
+$dropdown-color: #e2e8f0;
+$dropdown-link-color: #e2e8f0;
 $dropdown-link-hover-bg: #3d3f40;
-$dropdown-link-hover-color: #FFFFFF;
+$dropdown-link-hover-color: #ffffff;
 
 /*-- scss:rules --*/
-// Ensure navbar and footer backgrounds are applied consistently in dark mode
 body.quarto-dark .navbar {
   background-color: $navbar-bg !important;
 }
@@ -23,6 +41,20 @@ body.quarto-dark .navbar {
 body.quarto-dark .nav-footer,
 body.quarto-dark .page-footer {
   background-color: $footer-bg !important;
+}
+
+body.quarto-dark .navbar .nav-link {
+  color: $navbar-dark-color !important;
+}
+
+body.quarto-dark .navbar .nav-link:hover,
+body.quarto-dark .navbar .nav-link:focus {
+  color: $navbar-dark-hover-color !important;
+}
+
+body.quarto-dark .navbar .nav-link.active,
+body.quarto-dark .navbar .nav-link[aria-current="page"] {
+  color: $navbar-dark-active-color !important;
 }
 
 body.quarto-dark .navbar .dropdown-menu .dropdown-item:hover,
@@ -43,29 +75,22 @@ body.quarto-dark .navbar .dropdown-menu {
   background-color: $dropdown-bg;
 }
 
-.quarto-dark .header-section-number {
-  color: $brand-rwth-blue-50 !important; 
+body.quarto-dark .header-section-number {
+  color: #8ebae5 !important;
 }
 
-
-/* --- Listing icons in dark mode ---------------------------- */
-/* Keep sort & filter icons visible / colored */
 .quarto-dark .quarto-listing .bi {
   color: #95a5a6 !important;
 }
 
-/* If you also have thumbnail images in listings, 
-   cancel Quarto's auto-invert in dark mode */
 .quarto-dark img.listing-image {
   filter: none !important;
 }
 
-/* Table listing header sort icons specifically */
 .quarto-dark table.quarto-listing-table th .bi {
   color: #95a5a6 !important;
 }
 
-/* Filter (search) icon next to the filter box */
 .quarto-dark .listing-filter .bi {
   color: #95a5a6 !important;
 }
