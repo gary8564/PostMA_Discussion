@@ -1,11 +1,11 @@
 logo:
   small:
-    light: logos/logo_small_light.png
-    dark: logos/logo_small_dark.png
+    light: assets/TruhnLab.png
+    dark: assets/TruhnLab.png
   medium:
-    light: logos/logo_medium_light.png
-    dark: logos/logo_medium_dark.png
-  large: logos/logo_large.svg
+    light: assets/TruhnLab.png
+    dark: assets/TruhnLab.png
+  large: assets/TruhnLab.png
 
 color:
   palette:

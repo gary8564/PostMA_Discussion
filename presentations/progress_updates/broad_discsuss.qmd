@@ -8,6 +8,6 @@ format:
   revealjs:
     footer: "Broad direction discussion"
 metadata-files:
-  - ../../_slides.yml
+  - ../_slides.yml
 bibliography: references.bib 
 ---
