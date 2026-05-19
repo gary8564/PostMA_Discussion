@@ -14,7 +14,7 @@ format:
     title-block-style: none
     theme:
       light: [flatly, brand, "style/defaults.scss"]
-      dark: [darkly, brand, "style/defaults.scss", "src/style/dark-theme.scss"]
+      dark: [darkly, brand, "style/defaults.scss", "style/dark-theme.scss"]
 
 website:
   favicon: "assets/TruhnLab.png"
