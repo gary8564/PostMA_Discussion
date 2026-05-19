@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: _html
+
+execute:
+  freeze: auto
+
+# Brand configuration — shared across all profiles
+brand: brand/brand.yml
+
+# Shared HTML format settings
+format:
+  html:
+    title-block-style: none
+    theme:
+      light: [flatly, brand, "style/defaults.scss"]
+      dark: [darkly, brand, "style/defaults.scss", "src/style/dark-theme.scss"]
+
+website:
+  favicon: "assets/TruhnLab.png"
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    title: false
+    logo: "assets/TruhnLab.png"
+    logo-href: /index.qmd
+    left:
+      - text: "Overview"
+        href: index.qmd
+      - text: "Meetings"
+        href: notes/meetings.qmd
+      - text: "Presentation"
+        href: presentations/index.qmd
+    sidebar:
+      - id: presentation
+        title: "Presentation"
+        style: "docked"
+        search: true
+        contents:
+          - presentations/index.qmd
+    right:
+      - icon: github
+        href: https://github.com/gary8564/MedSliM
+
+  repo-url: https://github.com/gary8564/PostMA_Discussion
+  repo-actions: none
+  repo-branch: main
+  repo-link-target: "_blank"

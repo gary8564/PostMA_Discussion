@@ -1,0 +1,71 @@
+/*-- scss:defaults --*/
+$navbar-bg: #3d3f40;
+$footer-bg: #3d3f40;
+
+// Code blocks
+$code-block-bg-alpha: -0.8;
+
+$popover-bg: #242424;
+$input-bg: #242424;
+
+$dropdown-bg: #222222;
+$dropdown-color: #E2E8F0;
+$dropdown-link-color: #E2E8F0;
+$dropdown-link-hover-bg: #3d3f40;
+$dropdown-link-hover-color: #FFFFFF;
+
+/*-- scss:rules --*/
+// Ensure navbar and footer backgrounds are applied consistently in dark mode
+body.quarto-dark .navbar {
+  background-color: $navbar-bg !important;
+}
+
+body.quarto-dark .nav-footer,
+body.quarto-dark .page-footer {
+  background-color: $footer-bg !important;
+}
+
+body.quarto-dark .navbar .dropdown-menu .dropdown-item:hover,
+body.quarto-dark .navbar .dropdown-menu .dropdown-item:focus,
+body.quarto-dark
+  .navbar
+  .dropdown-menu
+  .dropdown-item.quarto-navbar-tools-item:hover,
+body.quarto-dark
+  .navbar
+  .dropdown-menu
+  .dropdown-item.quarto-navbar-tools-item:focus {
+  background-color: $dropdown-link-hover-bg !important;
+  color: $dropdown-link-hover-color !important;
+}
+
+body.quarto-dark .navbar .dropdown-menu {
+  background-color: $dropdown-bg;
+}
+
+.quarto-dark .header-section-number {
+  color: $brand-rwth-blue-50 !important; 
+}
+
+
+/* --- Listing icons in dark mode ---------------------------- */
+/* Keep sort & filter icons visible / colored */
+.quarto-dark .quarto-listing .bi {
+  color: #95a5a6 !important;
+}
+
+/* If you also have thumbnail images in listings, 
+   cancel Quarto's auto-invert in dark mode */
+.quarto-dark img.listing-image {
+  filter: none !important;
+}
+
+/* Table listing header sort icons specifically */
+.quarto-dark table.quarto-listing-table th .bi {
+  color: #95a5a6 !important;
+}
+
+/* Filter (search) icon next to the filter box */
+.quarto-dark .listing-filter .bi {
+  color: #95a5a6 !important;
+}

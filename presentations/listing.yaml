@@ -1,0 +1,9 @@
+- title: "Thesis Defense"
+  author: Gary Chang
+  date: 04.14.2026 # MM.DD.YYYY
+  path: "defense/defense.qmd"
+
+- title: "Discussion of broad direction"
+  author: Gary Chang
+  date: 20.05.2026 # MM.DD.YYYY
+  path: "./progress_updates/broad_discuss.qmd"

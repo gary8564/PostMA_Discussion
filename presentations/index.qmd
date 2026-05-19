@@ -1,0 +1,18 @@
+---
+title: "Presentation"
+sidebar: presentation
+toc: true
+listing:
+  - id: slides
+    template: slides-listing.ejs
+    contents: "listing.yaml"
+    sort-ui: true
+    filter-ui: true
+    field-display-names:
+      date: "Date"
+      title: "Title"
+      author: "Author"
+    field-types:
+      date: date
+    date-format: "MMM D, YYYY"
+---

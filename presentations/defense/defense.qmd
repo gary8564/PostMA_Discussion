@@ -1,0 +1,13 @@
+---
+title: "Thesis Defense"
+author: Gary Chang
+date: 2026-04-14
+sidebar: presentation
+format:
+  html:
+    page-layout: full
+resources:
+  - thesis_presentation_Gary.pdf
+---
+
+{{< pdf thesis_presentation_Gary.pdf width=100% height=800 >}}

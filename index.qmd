@@ -1,0 +1,31 @@
+---
+title: "Master thesis publication discussion"
+nocite: |
+  @*
+notebook-links: false
+from: markdown+emoji
+sidebar: false
+format: 
+  html:
+    page-layout: full
+    link-external-icon: true
+    link-external-newwindow: true
+---
+
+![](/assets/rad_img.png){fig-align="center" width="4in"}
+
+## Abstract
+
+Vision foundation models (\acsp{fm}) pretrained with self-supervised learning have become a powerful paradigm for transferable visual representations. 
+However, extending strong 2D \acsp{fm} to volumetric clinical modalities such as \ac{ct} and \ac{mri} remains difficult because 3D architectures are computationally expensive and annotated 3D data are scarce.
+
+This thesis studies how pretrained 2D \acsp{fm} can be leveraged for medical image analysis in two complementary ways. 
+First, we benchmark state-of-the-art 2D \acsp{fm} on \ac{cxr} and related radiological domains, comparing domain-specific models (RAD-DINO, Ark+) with general-purpose backbones (DINOv2) under frozen-feature evaluation, fine-tuning, and zero-shot transfer. 
+The results show a clear generalization–specialization trade-off: domain-specific models perform best on in-distribution \acs{cxr} tasks under frozen features, whereas general-purpose models retain greater adaptation headroom on out-of-distribution targets such as spine radiographs and mammography.
+
+Second, we propose MedSliM (Medical Slice-level representation learning with Mamba), a self-supervised framework for 3D knee \acs{mri} that adapts the COBRA architecture to volumetric imaging. MedSliM encodes 2D slices with pretrained \acsp{fm} and aggregates the resulting features using a Mamba-2 sequence encoder and \ac{abmil}. 
+On MRNet, it achieves an \acs{auroc} of $0.936$ for abnormality detection, outperforming the volumetric self-supervised baseline 3DINO with $0.922$, and also generalizes to the unseen kneeMRI dataset. Overall, the results show that operating in the feature space of pretrained 2D \acsp{fm}, rather than directly on raw voxels, provides a computationally and label-efficient route toward 3D medical image representation learning, while highlighting open challenges in interpretability, cross-plane alignment, and broader anatomical generalization.
+ 
+
+## Data
+

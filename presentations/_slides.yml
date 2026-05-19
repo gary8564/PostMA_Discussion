@@ -1,0 +1,45 @@
+title-slide-attributes:
+  data-background-image: "/img/slide_cover.png"
+  data-background-size: contain
+  data-background-opacity: "0.1"
+
+output-file: index.html
+standalone: true
+embed-resources: true
+self-contained-math: true
+
+bibliography: /content/references.bib
+
+fig-cap-location: margin
+from: markdown+emoji
+format:
+  revealjs:
+    theme:
+      - default # more theme options available at https://quarto.org/docs/presentations/revealjs/#themes
+      - brand # custom theme defined in brand/brand.yml
+    toc-title: "Today" # title of the table of contents
+    toc: false # whether or not to automatically generate a a table of contents based on the headings in the slide
+    toc-depth: 1
+    number-sections: false # whether or not to number the sections
+    slide-number: c/t
+    progress: true
+    history: false # clicking back in the browser will not go back to the previous slide
+    show-slide-number: all
+    controls: auto # show arrow controls for navigating through the slides
+    code-fold: true
+    width: 1280
+    height: 720
+    margin: 0.075
+    margin-top: 0px
+    margin-left: 0px
+    fontsize: 18pt
+    menu:
+      side: left
+    preview-links: false
+    link-external-newwindow: true
+    navigation-mode: linear
+
+execute:
+  eval: true
+  cache: false
+  freeze: true
