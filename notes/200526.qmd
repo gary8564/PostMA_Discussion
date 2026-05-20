@@ -1,5 +1,5 @@
 ---
-title: "Meeting notes (20 May 2026)"
+title: "Meeting (20 May 2026)"
 from: markdown+emoji
 sidebar: false
 format:
@@ -9,5 +9,20 @@ format:
     link-external-newwindow: true
 ---
 
-## Notes
+## Discussion
+- Discuss the direction of the publication
+
+
+
+
+
+
+## TODO List
+- [ ] Task 1:
+- [ ] Task 2:
+- [ ] Task 3:
+
+
+
+
 

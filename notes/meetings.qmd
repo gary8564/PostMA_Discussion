@@ -1,5 +1,5 @@
 ---
-title: "Meeting TODO list notes"
+title: "Meeting"
 from: markdown+emoji
 sidebar: false
 format: 

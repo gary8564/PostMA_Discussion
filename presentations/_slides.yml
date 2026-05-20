@@ -12,7 +12,9 @@ from: markdown+emoji
 format:
   revealjs:
     theme:
-      - default
+      - night
+    css:
+      - ../slides.css
     logo: ../../assets/TruhnLab.png
     toc-title: "Today" # title of the table of contents
     toc: false # whether or not to automatically generate a a table of contents based on the headings in the slide

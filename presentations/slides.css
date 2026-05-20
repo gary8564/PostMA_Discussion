@@ -1,0 +1,89 @@
+/* Full-slide architecture figures */
+.reveal .arch-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.2em 0 0;
+}
+
+.reveal .arch-slide p {
+  margin: 0;
+  text-align: center;
+}
+
+.reveal .arch-slide .arch-medslim {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  max-height: 520px;
+  object-fit: contain;
+}
+
+.reveal .arch-slide-curia {
+  margin-bottom: 0.5em;
+}
+
+.reveal .arch-slide-curia .arch-curia {
+  display: block;
+  margin: 0 auto;
+  width: 88%;
+  max-height: 260px;
+  object-fit: contain;
+}
+
+.reveal .raptor-slide {
+  margin-bottom: 0.35em;
+}
+
+.reveal .raptor-slide img {
+  display: block;
+  margin: 0 auto;
+  max-height: 310px;
+  object-fit: contain;
+}
+
+.reveal pre code {
+  max-height: 360px;
+}
+
+/* AUROC comparison table */
+.reveal .compare-table {
+  width: 72%;
+  margin: 0.4em auto 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  font-size: 0.72em;
+}
+
+.reveal .compare-table th,
+.reveal .compare-table td {
+  border-right: 1px solid rgba(255, 255, 255, 0.45);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  padding: 0.45em 1.1em;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.reveal .compare-table tr > :last-child {
+  border-right: none;
+}
+
+.reveal .compare-table tbody tr:last-child > * {
+  border-bottom: none;
+}
+
+.reveal .compare-table thead tr:first-child th:not(.corner-cell) {
+  font-weight: 700;
+  padding-bottom: 0.35em;
+}
+
+.reveal .compare-table tbody td:first-child {
+  text-align: left;
+  font-weight: 700;
+  width: 28%;
+}
+
+.reveal .compare-table tbody td:not(:first-child) {
+  width: 36%;
+}
