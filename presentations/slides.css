@@ -1,33 +1,27 @@
-/* Full-slide architecture figures */
-.reveal .arch-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.2em 0 0;
+.reveal .arch-columns {
+  margin-bottom: 0.35em;
 }
 
-.reveal .arch-slide p {
-  margin: 0;
+.reveal .arch-columns .column p {
+  margin: 0 0 0.15em;
   text-align: center;
+  font-weight: 700;
+  font-size: 0.85em;
 }
 
-.reveal .arch-slide .arch-medslim {
+.reveal .arch-columns .arch-medslim {
   display: block;
   margin: 0 auto;
-  width: 95%;
-  max-height: 520px;
+  width: 100%;
+  max-height: 420px;
   object-fit: contain;
 }
 
-.reveal .arch-slide-curia {
-  margin-bottom: 0.5em;
-}
-
-.reveal .arch-slide-curia .arch-curia {
+.reveal .arch-columns .arch-curia {
   display: block;
   margin: 0 auto;
-  width: 88%;
-  max-height: 260px;
+  width: 92%;
+  max-height: 320px;
   object-fit: contain;
 }
 
@@ -86,4 +80,13 @@
 
 .reveal .compare-table tbody td:not(:first-child) {
   width: 36%;
+}
+
+.reveal .slide-note {
+  width: 72%;
+  margin: 0.65em auto 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.45em;
+  line-height: 1.35;
+  text-align: left;
 }

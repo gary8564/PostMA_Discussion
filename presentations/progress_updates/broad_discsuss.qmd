@@ -70,7 +70,9 @@ bibliography: references.bib
   </tbody>
 </table>
 
-Note: Curia use DINOv2 pretrained on 200M CT/MRI slice images and the original paper uses kneeMRI dataset to showcase the results but only use the cnetral three slices to classify the ACL tear severity.
+::: {.slide-note}
+Note: Curia uses DINOv2 pretrained on 200M CT/MRI slice images. The original paper uses the kneeMRI dataset to showcase the results, but only uses the central three slices to classify ACL tear severity.
+:::
 
 ---
 
@@ -107,9 +109,8 @@ Inference:
 
 ---
 
-## Potential Improvements for MedSliM
+## Potential Improvement 1: Multi-View SSL
 
-1. Multi-View SSL
 ```text
 Sagittal slices -> Mamba-2 -> z_sag
 Coronal slices  -> Mamba-2 -> z_cor
@@ -124,7 +125,9 @@ InfoNCE(z_vol_student, z_vol_teacher)
 - Positive pairs compare fused multi-view volume embeddings.
 - Cross-attention gives interpretable view weights.
 
-2. Spatial Tokens
+---
+
+## Potential Improvement 2: Spatial Tokens
 
 ```text
 CLS token       -> Embed MLP -> Q 
@@ -138,7 +141,7 @@ h_slice -> Mamba-2
 
 ---
 
-## FM-MoE
+## Potential Improvement 3: FM-MoE
 
 ![](../../assets/MoE.png){width="75%"}
 
@@ -158,7 +161,7 @@ For each slice:
 
 ---
 
-## Proposed MedSliM v2 Components
+## Proposed MedSliM Refinement Components
 
 | Component | Current MedSliM | Proposed refinement |
 |---|---|---|
