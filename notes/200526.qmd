@@ -16,11 +16,11 @@ format:
 
 
 ## TODO List
-- [ ] Task 1: MoE and / or multiple random passes (explainability, confidence score) 
-- [ ] Task 2: Compare MedSliM with MRNet / MST / 3DINO
+- [x] Task 1: MoE and / or multiple random passes (explainability, confidence score) 
+- [x] Task 2: Compare MedSliM with MRNet / MST / 3DINO
 - [ ] Task 3: Scale training data 
-- [ ] Task 4: How many foundation models needed?
-- [ ] Task 5: More anatomical regions
+- [x] Task 4: How many foundation models needed?
+- [x] Task 5: More anatomical regions
 - [ ] Optiomal tasks: Look into interpretability by tracing back the slice weights in Mamba block and check RAPTOR performance and spatial tokens implementation if having spare time and space to put into the journal
 
 
