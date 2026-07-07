@@ -1,15 +1,14 @@
 ---
-title: "Broad direction discussion"
-subtitle: "Master's thesis publication discussion"
+title: "Ablation study: FM router, number of FMs, and anatomical regions"
+subtitle: "Router ablation study"
 author:
   - name: "Gary"
-date: 2026-05-20
+date: 2026-07-07
 format:
   revealjs:
-    footer: "Broad direction discussion"
+    footer: "Ablation study"
 metadata-files:
   - ../_slides.yml
-bibliography: references.bib 
 ---
 
 ## Recall
@@ -51,5 +50,3 @@ Last time we discussed the broad direction of the publication and the next steps
 :::
 
 :::
-
-
