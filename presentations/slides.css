@@ -33,13 +33,13 @@
   object-fit: contain;
 }
 
-/* Overview + zoomed-detail layout (Swin-style figure panel) */
+/* Two-panel figure comparison */
 .reveal .router-diagram {
   display: flex !important;
   flex-wrap: nowrap;
   align-items: stretch;
-  gap: 0.5em;
-  margin-top: 0.1em;
+  gap: 0.65em;
+  margin-top: 0.15em;
 }
 
 .reveal .router-diagram > .column {
@@ -47,7 +47,7 @@
   flex-direction: column;
   flex: 0 0 auto;
   min-width: 0;
-  height: 520px;
+  height: 480px;
 }
 
 .reveal .router-diagram .router-img-wrap {
@@ -77,12 +77,7 @@
 
 .reveal .router-diagram .router-overview {
   width: 100%;
-  max-height: 340px;
-}
-
-.reveal .router-diagram .router-detail {
-  max-width: 100%;
-  max-height: 430px;
+  max-height: 400px;
 }
 
 .reveal .router-diagram .router-caption {
@@ -98,6 +93,41 @@
 .reveal .router-diagram .router-caption p {
   margin: 0;
   font-weight: 400;
+}
+
+/* Single figure centered on slide */
+.reveal .centered-figure {
+  display: grid;
+  place-items: center;
+  min-height: 520px;
+  margin: 0;
+}
+
+.reveal .centered-figure p {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.reveal .centered-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 68%;
+  max-height: 520px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  float: none;
+}
+
+.reveal .task-list-item {
+  list-style: none;
+}
+
+.reveal .task-list-item input[type="checkbox"] {
+  margin: 0 0.4em 0.1em 0;
+  vertical-align: middle;
 }
 
 .reveal .raptor-slide {
