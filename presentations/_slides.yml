@@ -26,9 +26,11 @@ format:
     progress: true
     history: false # clicking back in the browser will not go back to the previous slide
     show-slide-number: all
-    controls: auto # show arrow controls for navigating through the slides
+    controls: true
     keyboard: true
-    # Keep one-slide-at-a-time; overflowing Plotly widgets otherwise turn the deck into a scroll page
+    # Reveal 5 automatically enters Scroll View on narrow browser panes.
+    # Disable that behavior so the GitHub Pages deck remains slide-based.
+    scroll-activation-width: 0
     scrollable: false
     code-fold: true
     width: 1280
