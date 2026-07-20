@@ -475,6 +475,19 @@
   padding-bottom: 0.6em;
 }
 
+/* Plotly inside Reveal: don't let widgets blow past the slide viewport */
+.reveal .js-plotly-plot,
+.reveal .plotly-graph-div {
+  max-width: 100% !important;
+  max-height: 520px !important;
+}
+
+.reveal .slide-plotly,
+.reveal .cell-output-display:has(.js-plotly-plot) {
+  max-height: 540px;
+  overflow: hidden;
+}
+
 /* Future work: side-by-side compact callouts */
 .reveal .future-work-cols {
   display: flex !important;

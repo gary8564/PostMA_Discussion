@@ -515,6 +515,7 @@ _post_script = f"""
 }})();
 """
 
+# Embed Plotly.js only once in the deck (second figure uses `include_plotlyjs=False`).
 display(
     HTML(
         fig.to_html(
@@ -759,7 +760,7 @@ _post_script = f"""
 display(
     HTML(
         fig.to_html(
-            include_plotlyjs=True,
+            include_plotlyjs=False,  # reuse Plotly.js from Q3 figure
             full_html=False,
             config={"displayModeBar": False, "responsive": True},
             post_script=_post_script,

@@ -23,3 +23,15 @@ listing:
 
 ::: {#listing-slides}
 :::
+
+```{=html}
+<script>
+// Open reveal decks in a new tab so site chrome / back-button hash nav don't fight Reveal
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('#listing-slides a[href]').forEach((a) => {
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener');
+  });
+});
+</script>
+```
