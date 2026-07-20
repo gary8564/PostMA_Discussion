@@ -27,6 +27,9 @@ format:
     history: false # clicking back in the browser will not go back to the previous slide
     show-slide-number: all
     controls: auto # show arrow controls for navigating through the slides
+    keyboard: true
+    # Keep one-slide-at-a-time; overflowing Plotly widgets otherwise turn the deck into a scroll page
+    scrollable: false
     code-fold: true
     width: 1280
     height: 720
@@ -39,10 +42,6 @@ format:
     preview-links: false
     link-external-newwindow: true
     navigation-mode: linear
-    # Keep one-slide-at-a-time; overflowing Plotly widgets otherwise turn the deck into a scroll page
-    scrollable: false
-    controls: true
-    keyboard: true
 
 execute:
   eval: true
