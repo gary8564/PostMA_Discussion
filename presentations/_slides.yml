@@ -17,6 +17,11 @@ format:
       - night
     css:
       - ../slides.css
+    # Load Plotly once in the document head. Embedding the full bundle inside a
+    # notebook cell moves that cell's graph div outside its Reveal <section>.
+    include-in-header:
+      - text: |
+          <script src="https://cdn.plot.ly/plotly-3.7.0.min.js" charset="utf-8"></script>
     logo: ../../assets/TruhnLab.png
     toc-title: "Today" # title of the table of contents
     toc: false # whether or not to automatically generate a a table of contents based on the headings in the slide

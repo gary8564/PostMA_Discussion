@@ -515,11 +515,12 @@ _post_script = f"""
 }})();
 """
 
-# Embed Plotly.js only once in the deck (second figure uses `include_plotlyjs=False`).
+# Plotly.js is loaded once in the document header by presentations/_slides.yml.
+# Keeping the bundle out of cell output ensures this div remains inside its slide.
 display(
     HTML(
         fig.to_html(
-            include_plotlyjs=True,
+            include_plotlyjs=False,
             full_html=False,
             config={"displayModeBar": False, "responsive": True},
             post_script=_post_script,
@@ -760,7 +761,7 @@ _post_script = f"""
 display(
     HTML(
         fig.to_html(
-            include_plotlyjs=False,  # reuse Plotly.js from Q3 figure
+            include_plotlyjs=False,  # loaded once in the document header
             full_html=False,
             config={"displayModeBar": False, "responsive": True},
             post_script=_post_script,
