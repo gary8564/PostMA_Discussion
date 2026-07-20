@@ -6,7 +6,9 @@ title-slide-attributes:
 output-file: index.html
 standalone: true
 embed-resources: true
-self-contained-math: true
+# MathJax 2 with embed-resources breaks MathMenu/MathZoom (404 on /extensions/*.js).
+# KaTeX is the supported self-contained math engine for revealjs.
+html-math-method: katex
 fig-cap-location: margin
 from: markdown+emoji+task_lists
 format:

@@ -1,11 +1,10 @@
 project:
   type: website
   output-dir: _html
-  render: 
+  render:
     - "*.qmd"
     - "notes/**/*.qmd"
     - "presentations/**/*.qmd"
-
 
 execute:
   freeze: auto
