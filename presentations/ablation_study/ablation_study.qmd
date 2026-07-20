@@ -865,28 +865,20 @@ Same recipe: freeze 2D FM → learn cross-slice pooling. Differs in **supervisio
 ::::
 
 
-## Idea for paper targets
+## Idea for paper targets {.paper-targets-slide}
 
 1. **Motivation**
-   - 2D benchmarking studies show no universally best pretrained model across all tasks
-   - Anna Karenina principle in deep learning
+   - No universally best 2D pretrained model across tasks; Anna Karenina principle
    - Driven by COBRA, feature-space pretraining remains underexplored
 
 2. **Main contributions**
-   - Propose MedSliM
-   - Comprehensive evaluation across tasks and datasets
-   - Competitive performance relative to strong baselines
+   - Propose MedSliM; evaluate across tasks/datasets; competitive vs strong baselines
 
 3. **Future work**
-   - 3D datasets remain limited. Explore more 3D datasets and tasks when available to further validate the proposed method.
-   - Currently constrained to classification. Extend to segmentation and detection by refining the architectural design.
+   - Expand beyond limited 3D datasets; extend from classification toward segmentation/detection
 
 ::: {.callout-warning .fm-agnostic-callout .paper-comparison-callout}
 ## Benchmark framing: compare apples with apples
 
-Direct comparison with **task-supervised models** is not fully matched: they optimize on downstream labels, whereas MedSliM learns from unlabeled feature views. Large-scale DINO studies likewise generally claim *competitive transfer* rather than universal superiority over supervised models, which can remain stronger on task-matched endpoints.
-
-- **Primary SSL comparator:** [3DINO](https://arxiv.org/abs/2501.11755), with emphasis on comparable accuracy at lower pretraining / inference compute
-- **Additional SSL comparator:** [VoCo](https://arxiv.org/abs/2507.08254), representing native-3D medical SSL
-- Keep supervised models as **reference ceilings**, not the main fairness claim
+Task-supervised models optimize on labels, so they are not a fully matched fairness claim (Original DINO paper likewise reports competitive transfer, not universal superiority). Prefer SSL comparison, **[3DINO](https://arxiv.org/abs/2501.11755)** (selling point: comparable accuracy at lower compute) and optionally **[VoCo](https://arxiv.org/abs/2507.08254)**. Keep supervised models as reference.
 :::
