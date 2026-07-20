@@ -19,6 +19,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -36,11 +39,13 @@ jobs:
         with:
           tinytex: true
 
+      - name: Point Quarto at conda Python
+        run: |
+          echo "QUARTO_PYTHON=${CONDA_PREFIX}/bin/python" >> "$GITHUB_ENV"
+          "${CONDA_PREFIX}/bin/python" -c "import nbformat, jupyter; print('jupyter ok:', '${CONDA_PREFIX}/bin/python')"
+
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
-        env:
-          # Use conda Python for {python} chunks (pages and revealjs slides)
-          QUARTO_PYTHON: ${{ env.CONDA_PREFIX }}/bin/python
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
