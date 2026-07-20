@@ -529,6 +529,23 @@
   margin: 0.06em 0;
 }
 
+/* Compact benchmark-framing note on the paper-target slide */
+.reveal .paper-comparison-callout {
+  margin-top: 0.35em;
+  font-size: 0.56em;
+  line-height: 1.2;
+}
+
+.reveal .paper-comparison-callout .callout-header {
+  padding-top: 0.12em;
+  padding-bottom: 0.08em;
+}
+
+.reveal .paper-comparison-callout .callout-body {
+  padding-top: 0.1em;
+  padding-bottom: 0.15em;
+}
+
 /* Compact inline comparison table on takeaway slides */
 .reveal .scale-size-table,
 .reveal .scale-size-table table {

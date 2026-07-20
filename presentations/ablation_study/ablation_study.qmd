@@ -880,3 +880,13 @@ Same recipe: freeze 2D FM → learn cross-slice pooling. Differs in **supervisio
 3. **Future work**
    - 3D datasets remain limited. Explore more 3D datasets and tasks when available to further validate the proposed method.
    - Currently constrained to classification. Extend to segmentation and detection by refining the architectural design.
+
+::: {.callout-warning .fm-agnostic-callout .paper-comparison-callout}
+## Benchmark framing: compare apples with apples
+
+Direct comparison with **task-supervised models** is not fully matched: they optimize on downstream labels, whereas MedSliM learns from unlabeled feature views. Large-scale DINO studies likewise generally claim *competitive transfer* rather than universal superiority over supervised models, which can remain stronger on task-matched endpoints.
+
+- **Primary SSL comparator:** [3DINO](https://arxiv.org/abs/2501.11755), with emphasis on comparable accuracy at lower pretraining / inference compute
+- **Additional SSL comparator:** [VoCo](https://arxiv.org/abs/2507.08254), representing native-3D medical SSL
+- Keep supervised models as **reference ceilings**, not the main fairness claim
+:::
