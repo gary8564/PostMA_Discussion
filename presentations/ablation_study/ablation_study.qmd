@@ -785,8 +785,9 @@ display(
 
 ## Q5. More anatomical regions
 
-**[CT-RATE](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE)**: 25,692 non-contrast axialchest CT volumes with 18-finding multilabel annotation.
-MedSliM checkpoint: `2026-07-05-04:15` — pair SSL with Curia, MedDINOv3, FlexiCT-2D.
+- **[CT-RATE](https://huggingface.co/datasets/ibrahimhamamci/CT-RATE)**: 25,692 non-contrast axialchest CT volumes with 18-finding multilabel annotation.
+
+- Pretrained MedSliM on CT-RATE training set with cross-FM-pair SSL with Curia, MedDINOv3, FlexiCT-2D. Curia is chosen as the eval FM for pooling target.
 
 ::: {.table-with-note}
 <table class="ablation-metric-table">
